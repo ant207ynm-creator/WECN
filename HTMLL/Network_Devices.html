@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Network_Devices</title>
+        <link rel="stylesheet" href="../CSS/Coordination1.css">
+        <link rel="stylesheet" href="../CSS/123.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <section class="container header-content">
+                <div class="logo">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj48cGF0aCBmaWxsPSIjMzM5OEU2IiBkPSJNMTI1IDMwTDE4Ny4xMjUgMjE2LjVMNjIuODc1IDIxNi41TDEyNSAzMHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjMzM5OEU2IiBkPSJNMTI1IDMwTDE4Ny4xMjUgMjE2LjVMNjIuODc1IDIxNi41TDEyNSAzMHoiIG9wYWNpdHk9IjAuOCI+PC9wYXRoPjxwYXRoIGZpbGw9IiM0RUE4RjciIGQ9Ik0xMjUgMzBMMjEzLjEyNSA2OC43NUwzNi44NzUgNjguNzVMMTI1IDMweiI+PC9wYXRoPjwvc3ZnPg=="
+                        alt="website">
+                    <h1>Web Education<span>.Computer Networks</span></h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="Login_to.html">Login</a></li>
+                        <li><a href="Single_up.html">Create an Account</a></li>
+                        <li><a href="Home_Network.html">Home Network</a></li>
+                        <li><a href="Network_Basics.html">Network Basics</a></li>
+                        <li><a href="#" class="active">Network Devices</a></li>
+                        <li><a href="Network_Protocols.html">Network Protocols</a></li>
+                        <li><a href="Network_Security.html">Network Security</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div class="welcome-section">
+                    <h1>Network Devices - Comprehensive Guide</h1>
+                    <p>Explore the hardware components that form the backbone of computer networks</p>
+                </div>
+
+                <section class="section">
+                    <h2 class="section-title">1. Router and Its Principle of Operation</h2>
+                    <p class="section-description">A <span class="highlight-text">Router</span> is a network device that
+                        primarily operates at the Layer 3 (Network Layer) of the OSI model. Its main function is to
+                        forward data packets between different computer networks.</p>
+
+                    <div class="media-container">
+                        <div class="video-container">
+                            <video controls muted>
+                                <source
+                                    src="Video/devices/01شرح أجهزة الشبكات والفرق بين الهاب والسويتش والراوتر - Hub vs Switch vs Router(360P).mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="media-item img-zoom">
+                            <img src="JPEG/n_dev/rautur1.jpeg" alt="Router Device">
+                        </div>
+                    </div>
+
+                    <div class="concept-description">
+                        <h3>Principle of Operation:</h3>
+                        <ol>
+                            <li><span class="highlight-text">Packet Reception:</span> The router receives a data packet
+                                from a connected device.</li>
+                            <li><span class="highlight-text">Destination IP Address Examination:</span> The router
+                                inspects the destination IP address in the packet header.</li>
+                            <li><span class="highlight-text">Routing Table Query:</span> The router uses its routing
+                                table to determine the best path.</li>
+                            <li><span class="highlight-text">Packet Forwarding:</span> The router forwards the packet to
+                                the appropriate interface.</li>
+                            <li><span class="highlight-text">MAC Address Change:</span> Changes the destination MAC
+                                address while preserving the original IP address.</li>
+                            <li><span class="highlight-text">NAT Configuration:</span> Allows multiple devices to access
+                                the Internet using a single public IP address.</li>
+                            <li><span class="highlight-text">Firewall & DHCP:</span> Includes built-in firewall
+                                functionalities and DHCP services.</li>
+                        </ol>
+                    </div>
+
+                    <div class="media-container">
+                        <div class="media-item img-zoom">
+                            <img src="JPEG/n_dev/d2.jpeg" alt="Router Functions">
+                        </div>
+                        <div class="media-item img-zoom">
+                            <img src="JPEG/n_dev/rut_m or un_cast.jpeg" alt="Router Operations">
+                        </div>
+                        <div class="media-item img-zoom">
+                            <img src="JPEG/n_dev/network0_rut.jpeg" alt="Network Router">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">2. Switch and Hub</h2>
+                    <p class="section-description">These two devices operate at the Layer 2 (Data Link Layer) of the OSI
+                        model.</p>
+
+                    <div class="concept-grid">
+                        <div class="concept-card">
+                            <h3>Hub</h3>
+                            <p>An older, simpler network device that operates at the Physical Layer.</p>
+                            <div class="media-container">
+                                <div class="media-item img-zoom">
+                                    <img src="JPEG/n_dev/hub.jpeg" alt="Network Hub">
+                                </div>
+                            </div>
+                            <div class="concept-description">
+                                <h4>Principle of Operation:</h4>
+                                <ul>
+                                    <li>Considered a "dumb" device with no address inspection</li>
+                                    <li>Broadcasts signals to all ports</li>
+                                    <li>Causes data collisions and reduces network efficiency</li>
+                                    <li>Rarely used in modern networks</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="concept-card">
+                            <h3>Switch</h3>
+                            <p>An intelligent network device that operates at the Data Link Layer.</p>
+                            <div class="media-container">
+                                <div class="video-container">
+                                    <video controls muted>
+                                        <source
+                                            src="Video/devices/03اعرف الفرق بين السويتش Switch والروتر Router ببساطة(360P).mp4"
+                                            type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="concept-description">
+                                <h4>Principle of Operation:</h4>
+                                <ul>
+                                    <li>MAC Address Learning: Stores source MAC addresses in its table</li>
+                                    <li>Intelligent Forwarding: Forwards frames only to specific ports</li>
+                                    <li>Collision Domain Segmentation: Each port is a separate collision domain</li>
+                                    <li>VLANs Support: Allows network segmentation into virtual networks</li>
+                                    <li>Layer 3 Switches: Can perform basic routing functions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-container">
+                        <div class="media-item img-zoom">
+                            <img src="JPEG/n_dev/sw.jpeg" alt="Network Switch">
+                        </div>
+                        <div class="media-item img-zoom">
+                            <img src="JPEG/n_dev/swit.jpeg" alt="Switch Device">
+                        </div>
+                        <div class="media-item img-zoom">
+                            <img src="JPEG/n_dev/switch.jpeg" alt="Switch Operations">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">3. Modem and Firewall</h2>
+                    <p class="section-description">These two devices perform distinct and crucial functions within a
+                        network.</p>
+
+                    <div class="concept-grid">
+                        <div class="concept-card">
+                            <h3>Modem (Modulator-Demodulator)</h3>
+                            <p>Converts digital signals to analog signals and vice versa.</p>
+                            <div class="media-container">
+                                <div class="media-item img-zoom">
+                                    <img src="JPEG/n_dev/mod_1.jpeg" alt="Network Modem">
+                                </div>
+                            </div>
+                            <div class="concept-description">
+                                <h4>Principle of Operation:</h4>
+                                <ul>
+                                    <li>Interface Between Different Networks</li>
+                                    <li>Modulation: Converts digital to analog signals</li>
+                                    <li>Demodulation: Converts analog to digital signals</li>
+                                    <li>Types: DSL Modem, Cable Modem, Fiber Optic Modem, Dial-up Modem</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="concept-card">
+                            <h3>Firewall</h3>
+                            <p>Network security system that monitors and controls network traffic.</p>
+                            <div class="media-container">
+                                <div class="media-item img-zoom">
+                                    <img src="JPEG/n_dev/firewell3.jpeg" alt="Network Firewall">
+                                </div>
+                            </div>
+                            <div class="concept-description">
+                                <h4>Principle of Operation:</h4>
+                                <ul>
+                                    <li>Traffic Inspection (Packet Filtering)</li>
+                                    <li>Rule Enforcement: Allows, blocks, or rejects packets</li>
+                                    <li>Threat Protection: Protects from unauthorized access and attacks</li>
+                                    <li>Trust Zones: Divides network into different trust zones</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">4. Network Cables and Connectivity</h2>
+                    <p class="section-description">Network cables serve as the backbone for various network topologies,
+                        connecting computers, routers, switches, and other network devices.</p>
+
+                    <div class="concept-description">
+                        <h3>Types of Network Cables:</h3>
+                        <div class="concept-grid">
+                            <div class="concept-card">
+                                <h4>Twisted-Pair Cable</h4>
+                                <p>Most common type used in wired networks, especially for Ethernet.</p>
+                                <div class="media-container">
+                                    <div class="media-item img-zoom">
+                                        <img src="JPEG/n_dev/ca3.jpeg" alt="Twisted-Pair Cable">
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>Unshielded Twisted-Pair (UTP): Most common, cost-effective</li>
+                                    <li>Shielded Twisted-Pair (STP): Additional protection against EMI</li>
+                                </ul>
+                            </div>
+
+                            <div class="concept-card">
+                                <h4>Coaxial Cable</h4>
+                                <p>Historically used for early Ethernet networks and cable television.</p>
+                                <div class="media-container">
+                                    <div class="media-item img-zoom">
+                                        <img src="JPEG/n_dev/ca2.jpeg" alt="Coaxial Cable">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="concept-card">
+                                <h4>Fiber Optic Cable</h4>
+                                <p>Transmits data using light pulses through strands of glass or plastic.</p>
+                                <div class="media-container">
+                                    <div class="media-item img-zoom">
+                                        <img src="JPEG/n_dev/ca_1.jpeg" alt="Fiber Optic Cable">
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>Single-Mode Fiber (SMF): Long-distance transmissions</li>
+                                    <li>Multi-Mode Fiber (MMF): Shorter distances</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media-container">
+                        <div class="video-container">
+                            <video controls muted>
+                                <source src="Video/devices/05أنواع الكبلات المستخدمة في الشبكات(360P).mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video-container">
+                            <video controls muted>
+                                <source src="Video/devices/06انواع الكابلات.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">5. Wired vs. Wireless Network Access</h2>
+                    <p class="section-description">Both wired and wireless networks have their advantages and
+                        disadvantages.</p>
+
+                    <div class="comparison-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>Wired (e.g., Ethernet)</th>
+                                    <th>Wireless (e.g., Wi-Fi)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Speed</td>
+                                    <td>Generally faster and more consistent</td>
+                                    <td>Can be fast, but speed can fluctuate</td>
+                                </tr>
+                                <tr>
+                                    <td>Reliability</td>
+                                    <td>Highly reliable, less prone to interference</td>
+                                    <td>More susceptible to interference and signal drops</td>
+                                </tr>
+                                <tr>
+                                    <td>Security</td>
+                                    <td>Inherently more secure as physical access is required</td>
+                                    <td>Less secure due to over-the-air transmission</td>
+                                </tr>
+                                <tr>
+                                    <td>Mobility</td>
+                                    <td>Limited mobility; devices are tethered</td>
+                                    <td>High mobility; devices can move freely</td>
+                                </tr>
+                                <tr>
+                                    <td>Installation</td>
+                                    <td>Can be more complex and costly</td>
+                                    <td>Easier and quicker to set up</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="media-container">
+                        <div class="media-item img-zoom">
+                            <img src="JPEG/n_dev/wird and wirls.jpeg" alt="Wired vs Wireless">
+                        </div>
+                        <div class="media-item img-zoom">
+                            <img src="JPEG/n_dev/wirless (2).jpeg" alt="Wireless Network">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="featured-topics">
+                    <h2>Explore Key Topics:</h2>
+                    <ul>
+                        <li><a href="Network_Basics.html">
+                                <h3>Network Basics</h3>
+                                <p>Definitions, types, topologies, IP, DNS, DHCP.</p>
+                            </a></li>
+                        <li><a href="Network_Devices.html">
+                                <h3>Network Devices</h3>
+                                <p>Routers, Switches, Hubs, Modems, Firewalls, Wireless APs.</p>
+                            </a></li>
+                        <li><a href="Network_Protocols.html">
+                                <h3>Network Protocols</h3>
+                                <p>OSI Model, TCP/IP, HTTP, FTP, SMTP, TCP, UDP.</p>
+                            </a></li>
+                        <li><a href="Network_Security.html">
+                                <h3>Network Security</h3>
+                                <p>Cyber threats, VPN, SSL/TLS, best practices.</p>
+                            </a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>About The Site</h3>
+                        <p>An educational site specialized in computer networks, aimed at providing high-quality
+                            educational content.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="Network_Basics.html">Network Basics</a></li>
+                            <li><a href="Network_Devices.html">Network Devices</a></li>
+                            <li><a href="Network_Protocols.html">Network Protocols</a></li>
+                            <li><a href="Network_Security.html">Network Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <p>Email: info@webeducation.com</p>
+                        <p>Phone: +123 456 7890</p>
+                        <address>Sana'a, Yemen</address>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>All Rights Reserved &copy; Web Education.Computer Networks / 2025</p>
+                </div>
+            </div>
+        </footer>
+        <script src="../JavaSeript/main1.js"></script>
+        <script src="../JavaSeript/animations1.js"></script>
+    </body>
+
+</html>

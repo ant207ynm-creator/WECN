@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login_to</title>
+        <link rel="stylesheet" href="../CSS/Coordination.css">
+        <link rel="stylesheet" href="../CSS/123.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <h1 class="logo">Login_to</h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="Single_up.html">Single_up</a></li>
+                    <li><a href="#">Login_to</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="container" id="login-container">
+                <div class="logo">Web Education<span>.Computer Networks</span></div>
+                <h2>Login_to</h2>
+
+                <form id="login-form" action="Home_Network.html" method="post">
+                    <div class="form-group">
+                        <label for="login-email" id="email">Email:</label>
+                        <input type="email" id="login-email" required placeholder="Enter Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Password:</label>
+                        <div class="password-container">
+                            <input type="password" id="login-password" id="password" required placeholder="Enter Password">
+                            <span class="toggle-password" onclick="togglePassword('login-password')">👁️</span>
+                        </div>
+                    </div>
+
+                    <button type="submit">Login_to</button>
+                </form>
+
+                <div class="switch-form">
+                    Don't have an account?
+                    <a href="Single_up.html">Create_one</a>
+                </div>
+            </div>
+        </main>
+        <script src="../JavaSeript/main1.js"></script>
+        <script src="../JavaSeript/animations1.js"></script>
+    </body>
+
+</html>

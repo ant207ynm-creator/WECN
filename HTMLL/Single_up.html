@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Single_up</title>
+        <link rel="stylesheet" href="../CSS/Coordination.css">
+        <link rel="stylesheet" href="../CSS/123.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <h1 class="logo">Single_up</h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#">Single_up</a></li>
+                    <li><a href="Login_to.html">Login_to</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="container" id="register-container">
+                <div class="logo">Web Education<span>.Computer Networks</span></div>
+                <h2>Create Account</h2>
+
+                <form id="register-form" action="Home_Network.html" method="post">
+                    <div class="form-group">
+                        <label for="register-name">Full Name:</label>
+                        <input type="text" id="register-name" required placeholder="Enter Full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-date">Hire Date:</label>
+                        <input type="date" id="register-date" required placeholder="Enter Hire Date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-email">Email:</label>
+                        <input type="email" id="register-email" required placeholder="Enter Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-password">Password:</label>
+                        <div class="password-container">
+                            <input type="password" id="register-password" required placeholder="Enter Password">
+                            <span class="toggle-password" onclick="togglePassword('register-password')">👁️</span>
+                        </div>
+                    </div>
+
+                    <button type="submit">Single_up</button>
+                </form>
+
+                <div class="switch-form">
+                    Already have an account?
+                    <a href="Login_to.html">Login_here</a>
+                </div>
+            </div>
+        </main>
+        <script src="../JavaSeript/main1.js"></script>
+        <script src="../JavaSeript/animations1.js"></script>
+    </body>
+
+</html>
