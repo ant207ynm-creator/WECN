@@ -1,0 +1,99 @@
+/* أنماط إضافية للتحسينات الحديثة */
+:root {
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --success-gradient: linear-gradient(135deg, #4CAF50, #45a049);
+  --warning-gradient: linear-gradient(135deg, #ff9800, #f57c00);
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* تحسينات للشريط المتقدم */
+#global-progress-bar {
+  margin-bottom: 2rem;
+  background: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.progress-container {
+  position: relative;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s ease, background 0.3s ease;
+}
+
+.progress-text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* نظام البحث الذكي */
+.smart-search {
+  position: relative;
+  margin-left: auto;
+}
+
+.search-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#global-search {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  width: 300px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+#global-search:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* أنيميشنز */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* الوضع الليلي */
+.dark-theme {
+  --bg-primary: #1a1a1a;
+  --text-primary: #ffffff;
+  --card-bg: #2d2d2d;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.dark-theme .concept-card {
+  background: var(--card-bg);
+  border: 1px solid #404040;
+}

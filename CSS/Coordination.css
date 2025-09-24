@@ -1,0 +1,252 @@
+/* Coordination.css */
+:root {
+  --primary-color: #3398e5;
+  --secondary-color: #2c3e50;
+  --accent-color: #fff7cc;
+  --light-color: #f5f5f5;
+  --dark-color: #333;
+  --text-color: #444;
+  --border-radius: 8px;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #adf180 0%, #39be9d 100%);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  background: rgb(29, 103, 104);
+}
+
+.header .logo {
+  color: #fff;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-list a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(164, 205, 168);
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90%;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  color: #3c2c2c;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #4f0909;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #33125e;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #6a11cb;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(106, 17, 203, 0.2);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #681bbb 0%, #2575fc 100%);
+  border: none;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(106, 17, 203, 0.4);
+}
+
+.switch-form {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.switch-form a {
+  color: #6a11cb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.switch-form a:hover {
+  color: #2575fc;
+  text-decoration: underline;
+}
+
+.password-container {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+}
+
+.logo {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Simple Full-Width Footer */
+.footer {
+  flex: 1;
+  display: flex;
+  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: rgb(29, 103, 104);
+  color: #442727;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+    display:flex;
+    background-color: rgb(183, 150, 150);
+    flex-direction:column;
+    gap: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 15px 15px rgb(2, 59, 55);
+    width: 400px;
+    max-width: 100%;
+    padding: 3px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.footer-section {
+  flex: 1 1 40px;
+  /* يسمح لكل قسم بالتمدد بشكل متساوي */
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #2d512f;
+}
+
+.footer-section p,
+.footer-section address {
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: rgba(180, 11, 11, 0.9);
+}
+
+.footer a {
+  color: #490b03;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #522222;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: rgb(60, 18, 18);
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+
+  input,
+  button {
+    padding: 10px;
+  }
+}
